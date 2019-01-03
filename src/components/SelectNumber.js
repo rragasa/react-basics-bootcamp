@@ -19,7 +19,7 @@ class SelectNumber extends Component {
         <div className="form-row align-items-center">
           <div className="col-auto my-1">
             <label className="mr-sm-2 sr-only" htmlFor="numberOfParticipants">Preference</label>
-            <select name="numberOfParticipants" className="custom-select mr-sm-2" id="numberOfParticipants">
+            <select name="numberOfParticipants" className="custom-select mr-sm-2" id="numberOfParticipants" required="required">
               <option defaultValue>Choose...</option>
               {selectOptions}
             </select>

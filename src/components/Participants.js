@@ -6,7 +6,8 @@ class Participants extends Component {
     const participants = Array.from(Array(this.props.selectedParticipants).keys()).map(p => {
       return (
         <div className="col-sm-6" key={p}>
-          <input name={`participants[${p}]`} type="text" className="form-control" placeholder="Name" />
+          <input name={`participants[${p}]`} type="text" className="form-control" placeholder="Name" autoComplete="off"
+            maxLength="75" required="required" pattern="^[A-Za-z -]+$" />
         </div>
       );
     });
