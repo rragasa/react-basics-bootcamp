@@ -2,13 +2,13 @@
 
 ## Logic
 
-This component will display a table with pairs of offerers and recepients of the Secret Santa gifts. The names should be shuffled and then paired and each selection of a recepient should be random.
+This component will display a table with the pairs of offerers and recepients of the Secret Santa gifts. The names should be shuffled and then paired and each selection of a recepient should be random.
 
 ## Steps
 
 1. Create a React component called `Matches` in the `components` directory.
 2. Include the `Matches` component and include it inside the `.secret-santa-app` of the main `App` component, which will be displayed in the proper step.
-3. During the component's life-cycle event `componentDidMount`, shuffle the `names` array using the "Fisher-Yates Shuffle" algorithm (see below) and create two new arrays, `offer` and `receive`, which will include the appropriate people. A name can exist only once in an array. Both these two new arrays should be stored in the components `state`.
+3. During the component's life-cycle event `componentDidMount`, shuffle the `names` array using the "Fisher-Yates Shuffle" algorithm (see below) and create two new arrays, `offer` and `receive`, which will include the appropriate people. A name can exist only once in an array. Both these two new arrays should be stored in this component's `state`.
 4. Create a new JSX template array called `matches`, which will have the following DOM example. The first `<td>` shows the offerer and the second shows the recepient. The number `<th>` should be just a plain enumeration (starting at 1).
 
 ```
@@ -66,6 +66,6 @@ shuffle = array => {
 
 ## Hints
 
-1. The Array methods `.pop()` and `.push()` will be good to know.
+1. The Array methods `.pop()` and `.push()` are good to know.
 2. A `while` could help, but if a name exists twice, it could result to an endless loop. So, prevent duplicate names.
 3. An offerer and a recepient of the same match cannot be the same person.
