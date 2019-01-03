@@ -10,9 +10,10 @@ The drop-down field's options will have to be only even numbers greater than `2`
 
 1. Create a React component called `SelectNumber` in the `components` directory.
 2. Add the necessary `state` changes to the `App` component.
-3. Create a Javascript array of the displayed options, bearing in mind the minimum and maximum values.
-4. Create a new React template array of the `<option>` fields, iterating through the options' array.
-5. Display the result using the following template; you don't need to change anything in it; only add to it:
+3. Include the `SelectNumber` component and include it inside the `.secret-santa-app` of the main `App` component.
+4. Create a Javascript array of the displayed options, bearing in mind the minimum and maximum values.
+5. Create a new React template array of the `<option>` fields, iterating through the options' array.
+6. Display the result using the following template; you don't need to change anything in it; only add to it:
 
 ```
 <form name="participants-number">
