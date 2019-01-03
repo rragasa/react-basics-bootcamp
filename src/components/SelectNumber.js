@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 class SelectNumber extends Component {
   render() {
     const options = Array.from(Array(this.props.maxParticipants).keys()).map(i => i + 1).filter(i => i % 2 === 0);
+    options.shift();
 
     const selectOptions = options.map(option => {
       return (
@@ -12,7 +13,7 @@ class SelectNumber extends Component {
     });
 
     return (
-      <form name="select-participants" onSubmit={this.props.handleStep1}>
+      <form name="participants-number" onSubmit={this.props.handleFirstStep}>
         <h1 className="display-4">Step 1: Select the number of participants</h1>
 
         <div className="form-row align-items-center">
