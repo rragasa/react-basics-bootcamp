@@ -37,30 +37,6 @@ Another flag (`selectedParticipants`) in the `App` component's `state` should st
 
 5. When the user clicks "Next", then the `step` should adjust accordingly and the people's names should be collected and added to an array in the `App` component's `state` called `names`.
 
-## Fisher-Yates Shuffle algorithm
-
-```
-shuffle = array => {
-    let counter = array.length;
-
-    // While there are elements in the array
-    while (counter > 0) {
-        // Pick a random index
-        let index = Math.floor(Math.random() * counter);
-
-        // Decrease counter by 1
-        counter--;
-
-        // And swap the last element with it
-        let temp = array[counter];
-        array[counter] = array[index];
-        array[index] = temp;
-    }
-
-    return array;
-};
-```
-
 ## Hints
 
 1. A function runs on form's submission when in the `onSubmit` event.
