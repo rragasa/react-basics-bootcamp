@@ -40,7 +40,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container secret-santa-app">
         <Navbar />
         {this.state.step === 1 && <SelectNumber maxParticipants={this.state.maxParticipants} handleFirstStep={this.handleFirstStep} />}
         {this.state.step === 2 && <Participants selectedParticipants={this.state.selectedParticipants} handleSecondStep={this.handleSecondStep} />}

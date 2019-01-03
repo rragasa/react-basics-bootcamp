@@ -56,6 +56,8 @@ class Matches extends Component {
     this.setState({ offer, receive });
   };
 
+
+  // Template: https://getbootstrap.com/docs/4.2/content/tables/
   render() {
     let matches = [];
 
