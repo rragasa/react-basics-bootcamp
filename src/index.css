@@ -1,14 +1,38 @@
-body {
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.secret-santa-app .navbar {
+  background-color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.secret-santa-app .navbar span, .secret-santa-app .navbar span:hover {
+  color: orangered;
+  flex: 1;
+  font-family: 'Racing Sans One', sans-serif;
+  font-size: 3rem;
+}
+
+form[name="participants-number"] .display-4 {
+  font-size: 2.5rem;
+}
+
+form[name="participants-names"] input {
+  margin-bottom: 10px;
 }
