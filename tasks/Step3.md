@@ -12,7 +12,7 @@ Therefore, another flag (`selectedParticipants`) in the `App` component's `state
 
 1. Create a React component called `Participants` in the `components` directory.
 2. Include the `Participants` component and include it inside the `.secret-santa-app` of the main `App` component.
-3. Based on the `selectedParticipants` value, create an array of React input templates, which will be added to the main template. The input template to be iterated is the following. The `name` and something else necessary for React are missing from this.
+3. Based on the `selectedParticipants` value, create an array of JSX input templates, which will be added to the main template. The input template to be iterated is the following. The `name` and something else necessary for React are missing from this.
 
 ```
 <div className="col-sm-6">
@@ -21,7 +21,7 @@ Therefore, another flag (`selectedParticipants`) in the `App` component's `state
 </div>
 ```
 
-4. Add this new template Array to the main template and return it:
+4. Add this new JSX template Array to the main template and return it:
 
 ```
 <form name="participants-names">
@@ -35,10 +35,12 @@ Therefore, another flag (`selectedParticipants`) in the `App` component's `state
 </form>
 ```
 
+5. When the user clicks "Next", then the `step` should adjust accordingly and the people's names should be collected and added to an array in the `App` component's `state` called `names`.
+
 ## Hints
 
 1. A function which runs on form's submission in React is in the `onSubmit` event.
-2. The following component will show if the `cheeky` statement is truthy:
+2. The following component will show only when the `cheeky` statement is truthy:
 
 ```
 {cheeky && <AmazingComponent />}
