@@ -1,3 +1,7 @@
+## About
+
+This project is a React Basics Bootcamp material. Fork the repository to your account. Clone it and switch to the `starter` branch. Then follow the instructions for each step, as those described in the documentation in the `/tasks` directory.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
