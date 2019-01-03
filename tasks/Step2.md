@@ -2,7 +2,7 @@
 
 ## Logic
 
-This components will be the first step for the user. It will have a title describing the step, a drop-down field where a user can select the number of participants and a button to continue to the next step.
+This component will be the first step for the user. It will have a title describing the step, a drop-down field where a user can select the number of participants and a button to continue to the next step.
 
 The drop-down field's options will have to be only even numbers greater than `2`. The maximum participants will have to be accessed from the main `App` component's `state` as `maxParticipants`.
 

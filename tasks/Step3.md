@@ -2,11 +2,11 @@
 
 ## Logic
 
-This component will be the user's second step, where they should provide people's names. They will be navigated here once they have clicked "Next" during the previous step. This components will be rendering a form with as many user input fields as the number selected in the previous step.
+This component will be the user's second step, where they should provide people's names. They will be navigated here once they have clicked "Next" during the previous step. This component will be rendering a form with as many user input fields as the number selected in the previous step.
 
 Only one component can be displayed at a time. A flag in the `App` component's `state` (`step`) should always describe which step the user is currently at, in order for the correct component to be displayed.
 
-Therefore, another flag (`selectedParticipants`) in the `App` component's `state` should store the user's selection of the first step and the function which handles the form's submission should prevent the default logic of a page reload, should update the necessary flags and finally, update the `state`'s flag `step`, which keeps the user's current step. This function should do something only when there is a selection.
+Another flag (`selectedParticipants`) in the `App` component's `state` should store the user's selection of the first step and the function which handles the form's submission should prevent the default logic of a page reload, update the necessary flags and finally, update the `state`'s flag `step`, which keeps the user's current step. This function should do something only when there is a selection.
 
 ## Steps
 
@@ -37,9 +37,33 @@ Therefore, another flag (`selectedParticipants`) in the `App` component's `state
 
 5. When the user clicks "Next", then the `step` should adjust accordingly and the people's names should be collected and added to an array in the `App` component's `state` called `names`.
 
+## Fisher-Yates Shuffle algorithm
+
+```
+shuffle = array => {
+    let counter = array.length;
+
+    // While there are elements in the array
+    while (counter > 0) {
+        // Pick a random index
+        let index = Math.floor(Math.random() * counter);
+
+        // Decrease counter by 1
+        counter--;
+
+        // And swap the last element with it
+        let temp = array[counter];
+        array[counter] = array[index];
+        array[index] = temp;
+    }
+
+    return array;
+};
+```
+
 ## Hints
 
-1. A function which runs on form's submission in React is in the `onSubmit` event.
+1. A function runs on form's submission when in the `onSubmit` event.
 2. The following component will show only when the `cheeky` statement is truthy:
 
 ```
